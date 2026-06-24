@@ -147,7 +147,7 @@ clima = st.sidebar.multiselect(
 
 st.sidebar.markdown("""___""")
 
-st.sidebar.markdown('### Powered by Égley Rodrigues')
+st.sidebar.markdown('##### Powered by Égley Rodrigues')
 
 #Filtro de datas
 linhas_selecionadas = df1['Order_Date'] < data
@@ -160,7 +160,7 @@ df1 = df1.loc[linhas_selecionadas, :]
 #Filtro de clima
 linhas_selecionadas = df1['Weatherconditions'].isin(clima)
 df1 = df1.loc[linhas_selecionadas,:]
-#-------------------------------------Barra Lateral-------------------------------------------------------
+#-------------------------------------Centro-------------------------------------------------------
 #Layout no Streamlit
 
 tab1, tab2, tab3 = st.tabs(['Visão Gerencial','Avaliações','Ranking'])
