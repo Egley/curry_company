@@ -148,6 +148,7 @@ def time_avg_del_city_traffic(df1):
 #=======================================================================================================#
 
 #---------------------------------Início da estrutura lógica do código-----------------------------------------
+#--------------------------------------------Barra lateral-----------------------------------------------------
 
 #Importando dados
 df = pd.read_csv('dataset/train.csv')
@@ -193,7 +194,7 @@ weatherconditions_options = st.sidebar.multiselect(
     default=['conditions Cloudy','conditions Fog', 'conditions Sandstorms', 'conditions Stormy','conditions Sunny','conditions Windy'])
 
 st.sidebar.markdown("""---""")
-st.sidebar.markdown('### Powered by Égley Rodrigues')
+st.sidebar.markdown('##### Powered by Égley Rodrigues')
 
 #Filtro de datas
 linhas_selecionadas = df1['Order_Date'] < date_slider
