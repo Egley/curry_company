@@ -14,8 +14,6 @@ st.set_page_config(
     page_icon="🍽️",
     layout='wide')
 
-df = pd.read_csv(r"C:\Users\Égley\Repos\CDC 2.0\Python2.0\train.csv\train.csv")
-print(df.head(2))
 
 
 
